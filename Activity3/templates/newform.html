@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+      <form action = "{{ url_for('success') }}" method = "POST">
+         <h3>Update Student Information</h3>
+         <h1>Editing : {{ msg }} {{ copied[1]}} </h1>
+          <h4>Name: {{ copied[0]}} </h4>
+          <h4>Course: {{ copied[2]}} </h4>
+          <h4>Year: {{ copied[3]}} </h4>
+
+
+
+
+
+         Name<br>
+         <input type = "text" name = "nm" /></br>
+
+         Course<br>
+         <input type = "text" name = "course" /><br>
+
+          Gender<br>
+            <input type="radio" name="gender" value="M"> Male<br>
+  <input type="radio" name="gender" value="F"> Female<br>
+
+         Year<br>
+
+
+
+  <input type="radio" name="year" value="I"> First Year<br>
+  <input type="radio" name="year" value="II"> Second Year<br>
+  <input type="radio" name="year" value="III"> Third Year<br>
+  <input type="radio" name="year" value="IV"> Fourth Year <br>
+  <input type="radio" name="year" value="V"> Fifth Year <br>
+  <input type="radio" name="year" value="V++"> Ummmm... <br>
+
+          <h3>For security reasons ID can't be changed, please contact the web admin</h3>
+          To Confirm Please Type input ID again<br>
+         <input type = "text" name = "id"><br>
+
+    <h2><input type = "submit" value = "Submit" /><br></h2>
+    <h1><a href = "/"><input type = "button" value = "Cancel" /><br></a></h1>
+
+
+
+      </form>
+
+
+
+
+
+</html>

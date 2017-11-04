@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Students Registered</title>
+
+
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+      <link rel="stylesheet" href="static/style1.css">
+
+
+
+
+      <div class="container container-table">
+
+        <div class="text-center"><h1>Students Registered</h1></div>
+
+</div>
+
+
+
+</head>
+
+<body>
+<table>
+
+
+
+    <thead>
+
+
+  <tr>
+    <th>NAME</th>
+      <th>ID NUMBER</th>
+      <th>COURSE</th>
+      <th>YEAR</th>
+      <th>GENDER</th>
+
+</tr>
+ </thead>
+ <tbody>
+         {% for row in rows %}
+
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["id"]}}</td>
+               <td> {{ row["course"]}}</td>
+               <td>{{row['year']}}</td>
+            <td>{{row['gender']}}</td>
+
+            </tr>
+
+         {% endfor %}
+ </tbody>
+    </table>
+ <div class="container container-table">
+           <div class="text-center"> <p class="lead"></p>
+        <p><a class="btn btn-lg btn-success" href="update" role="button">Update!</a>
+                <a class="btn btn-lg btn-success" href="delete" role="button">Delete!</a>
+            <a class="btn btn-lg btn-success" href="/" role="button">Home</a>
+
+            </p></div>
+     </div>
+
+</body>
+</html>

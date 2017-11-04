@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+   <body>
+
+      <table class="pure-table-horizontal" border = 1>
+         <thead>
+            <td>Name</td>
+            <td>ID</td>
+            <td>Course</td>
+            <td>Year</td>
+           <td>Course ID</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["id"]}}</td>
+               <td> {{ row["course"]}}</td>
+               <td>{{row['year']}}</td>
+               <td>{{row['courseID']}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+
+      <a href = "/">Go back to home page</a>
+      </br>
+            <p><a class="btn btn-lg btn-success" href="update" role="button">Update!</a>
+                <a class="btn btn-lg btn-success" href="delete" role="button">Delete!</a>
+
+            </p>
+
+   </body>
+</html>
