@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart Scraper</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+
+<body>
+	<form action="{{ url_for('lookup') }}" class="register" method="POST">
+
+<div class="input-group">
+    <div class="input-group-btn search-panel">
+		<button type="button" class="btn btn-default dropdown-toggle">
+		<span id="search_concept">SKU</span> <span class="caret"></span>
+		</button>
+
+	</div>
+
+
+	<input type="hidden" name="search_param" value="name" id="search_param">		 
+	<input type="text" class="form-control" name="lookup" placeholder="Search.." id="search_key" value="">
+	<span class="input-group-btn">
+			<a class="btn btn-default text-muted" href="http://adminlte.dev/user/item" title="Clear"><i class="glyphicon glyphicon-remove"></i> </a>
+			<button class="btn btn-info" type="submit">Query</button>
+ 
+	</span>
+</div>
+    </form><br><br>
+ <a href="/" class="btn btn-primary" role="button">Interface</a>
+  <a href="/background" class="btn btn-danger" role="button">Run Notifier</a>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
